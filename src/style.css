@@ -15,6 +15,10 @@
     url(./Caniago/Caniago\ Regular.ttf) format('ttf');
 }
 
+body {
+    background-color: black;
+}
+
 nav {
     position: absolute;
     display: flex;
@@ -40,7 +44,7 @@ nav div:hover {
 }
 
 #content {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-image: url(../src/blurredbackground.jpg);
     background-size: cover;
@@ -61,6 +65,42 @@ nav div:hover {
     border: 1px solid black;
 }
 
+.food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'apps pork'
+    'rice chef'
+    'lomein chef';
+}
+
+.appetizers { 
+    grid-area: apps;
+}
+
+.pork {
+    grid-area: pork;
+}
+
+.fried-rice {
+    margin-top: 2rem;
+    grid-area: rice;
+}
+
+.lo-mein {
+    grid-area: lomein;
+}
+
+.chef-specials {
+    border: 3px rgb(153, 0, 0) double;
+    grid-area: chef;
+}
+
+.food-menu {
+    position: absolute;
+    top: 15vh;
+}
+
 .name {
     display: flex;
     align-items: center;
@@ -74,6 +114,90 @@ nav div:hover {
     font-family: 'Caniago';
 }
 
+.food > div {
+    padding: 1.2rem 2.4rem;
+}
+
+.menu-section {
+    font-size: 2rem;
+    font-family: 'Caniago';
+}
+
+.spicy {
+    color: rgb(153, 0, 0);
+}
+
+.descriptive {
+    font-size: .7rem;
+}
+
 .advert {
     font-size: 1.2rem;
+}
+
+.disclaimer {
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.top-images, .bottom-images {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.img1 {
+    background-image: url(../src/food_images/chinese.avif);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.img2 {
+    background-image: url(../src/food_images/Gobi_Manchurian-color-corrected.webp);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.img3 {
+    background-image: url(../src/food_images/fast-pork-fried-rice-107790-1.jpeg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.img4 {
+    background-image: url(../src/food_images/eggrolls-14.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.img5 {
+    background-image: url(../src/food_images/googai.jpeg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.img6 {
+    background-image: url(../src/food_images/Chinese-Donuts-Photo-2.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
 }

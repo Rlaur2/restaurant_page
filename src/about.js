@@ -1,24 +1,4 @@
-const aboutPage = (() => {
-
-    const navbarCreation = (() => {
-        const content = document.querySelector('#content');
-        const nav = document.createElement('nav');
-        const aboutButton = document.createElement('div');
-        const menuButton = document.createElement('div');
-        const contactButton = document.createElement('div');
-        aboutButton.textContent = 'About';
-        aboutButton.classList.toggle('about');
-        menuButton.textContent = 'Menu';
-        menuButton.classList.toggle('menu');
-        contactButton.textContent = 'Contact';
-        contactButton.classList.toggle('contact');
-        nav.appendChild(aboutButton);
-        nav.appendChild(menuButton);
-        nav.appendChild(contactButton);
-        content.appendChild(nav);
-    })();
-
-    const aboutSection = (() => {
+const aboutPage = () => {
         const content = document.querySelector('#content');
         const container = document.createElement('div');
         container.classList.toggle('container');
@@ -36,11 +16,6 @@ const aboutPage = (() => {
         container.appendChild(restaurantNameContainer);
         container.appendChild(advert);
         content.appendChild(container);
-    })();
-
-
-
-
-})();
+};
 
 export {aboutPage};
