@@ -4,7 +4,8 @@
   "description": "A mock restaurant site made entirely with javascript using imported modules for each page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/Rlaur2/restaurant_page#readme",
   "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
   }

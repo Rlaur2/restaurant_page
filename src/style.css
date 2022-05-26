@@ -2,10 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 :root {
     --background-box: rgba(180,210,210,.5);
+}
+
+@font-face {
+    font-family: 'Caniago';
+    src: url(./Caniago/Caniago\ Regular.woff2) format('woff2'),
+    url(./Caniago/Caniago\ Regular.ttf) format('ttf');
 }
 
 nav {
@@ -25,6 +32,11 @@ nav div {
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     box-shadow: 2px 2px 5px -2px rgba(0,0,0,.8);
+}
+
+nav div:hover {
+    background-color: rgba(222,252,252,.5);
+    cursor: pointer;
 }
 
 #content {
@@ -56,6 +68,10 @@ nav div {
     flex-flow: column;
     margin-bottom: 2rem;
     font-size: 2rem;
+}
+
+.name h1, .name h3 {
+    font-family: 'Caniago';
 }
 
 .advert {
