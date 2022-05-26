@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-box: rgba(180,210,210,.5);
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    top: 0;
+    gap: 2rem;
+    font-size: 3rem;
+}
+
+nav div {
+    background-color: var(--background-box);
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 2px 2px 5px -2px rgba(0,0,0,.8);
+}
+
+#content {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../src/blurredbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+}
+
+.container {
+    width: 50vw;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.5);
+    background: var(--background-box);
+    border: 1px solid black;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.advert {
+    font-size: 1.2rem;
+}
