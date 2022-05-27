@@ -209,6 +209,10 @@ const menu = () => {
     const chefDragonDes = document.createElement('div');
     chefDragonDes.textContent = 'Shrimp w. mixed Chinese vegetables & chunk of chicken fried in spicy sauce';
     chefDragonDes.classList.toggle('descriptive');
+    const spicyDisclaimer = document.createElement('div');
+    spicyDisclaimer.textContent = '* Menu items in red are spicy! We can adjust spiciness to your preference.*';
+    spicyDisclaimer.classList.toggle('spicy');
+    spicyDisclaimer.classList.toggle('disclaimer');
     chefDragon.appendChild(chefDragonDes);
     chefList.appendChild(chefHappy);
     chefList.appendChild(chefSea);
@@ -225,8 +229,12 @@ const menu = () => {
     chefSection.appendChild(chefList);
     food.appendChild(chefSection);
     foodMenu.appendChild(food);
+    foodMenu.appendChild(spicyDisclaimer);
     foodMenu.appendChild(bottomImages);
     content.appendChild(foodMenu);
+    const remove = () => {
+        content.removeChild(foodMenu);
+    };
 }
 
 export {menu};

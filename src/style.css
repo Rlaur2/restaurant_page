@@ -16,7 +16,10 @@
 }
 
 body {
-    background-color: black;
+    background-image: url(../src/blurredbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 nav {
@@ -45,10 +48,7 @@ nav div:hover {
 
 #content {
     min-height: 100vh;
-    width: 100vw;
-    background-image: url(../src/blurredbackground.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
