@@ -172,15 +172,61 @@ const menu = () => {
     chefChowDes.classList.toggle('descriptive');
     chefChowDes.textContent = 'Chunks of lobster, shrimp, scallop w. mixed vegetables';
     chefChow.appendChild(chefChowDes);
-    
-    
-
-
-
-
-    console.log(food);
-    /*foodMenu.appendChild(food);
-    content.appendChild(foodMenu);*/
+    const chefFour = document.createElement('li');
+    chefFour.textContent = 'Four Seasons';
+    const chefFourDes = document.createElement('div');
+    chefFourDes.textContent = 'A delicious combination of shrimp, chicken breast meat, sliced beef, roast pork sauteeds w. fresh vegis in special sauce';
+    chefFourDes.classList.toggle('descriptive');
+    chefFour.appendChild(chefFourDes);
+    const chefTso = document.createElement('li');
+    chefTso.textContent = 'General Tso\'s Chicken';
+    chefTso.classList.toggle('spicy');
+    const chefOrange = document.createElement('li');
+    chefOrange.textContent = 'Orange Chicken';
+    chefOrange.classList.toggle('spicy');
+    const chefSesame = document.createElement('li');
+    chefSesame.textContent = 'Sesame Chicken';
+    const chefBeef = document.createElement('li');
+    chefBeef.textContent = 'Sesame Beef';
+    const chefBeefDes = document.createElement('div');
+    chefBeefDes.textContent = 'Chunks of tender beef steak lightly batter fried & coated w. chef\'s special sauce sprinkled w. roasted sesame seeds';
+    chefBeefDes.classList.toggle('descriptive');
+    chefBeef.appendChild(chefBeefDes);
+    const chefOB = document.createElement('li');
+    chefOB.textContent = 'Beef W. Orange Flavor';
+    chefOB.classList.toggle('spicy');
+    const chefOBDes = document.createElement('div');
+    chefOBDes.textContent = 'Chunks of tender beef steak w. hot pepper sauce & w. a touch of mandarin orange peel flavor';
+    chefOBDes.classList.toggle('descriptive');
+    chefOB.appendChild(chefOBDes);
+    const chefHunan = document.createElement('li');
+    chefHunan.textContent = 'Shrimp, Chicken, & Beef Hunan Style';
+    chefHunan.classList.toggle('spicy');
+    const chefShrimp = document.createElement('li');
+    chefShrimp.textContent = 'Sesame Shrimp';
+    const chefDragon = document.createElement('li');
+    chefDragon.textContent = 'Dragon & Phoenix';
+    const chefDragonDes = document.createElement('div');
+    chefDragonDes.textContent = 'Shrimp w. mixed Chinese vegetables & chunk of chicken fried in spicy sauce';
+    chefDragonDes.classList.toggle('descriptive');
+    chefDragon.appendChild(chefDragonDes);
+    chefList.appendChild(chefHappy);
+    chefList.appendChild(chefSea);
+    chefList.appendChild(chefChow);
+    chefList.appendChild(chefFour);
+    chefList.appendChild(chefTso);
+    chefList.appendChild(chefOrange);
+    chefList.appendChild(chefSesame);
+    chefList.appendChild(chefBeef);
+    chefList.appendChild(chefOB);
+    chefList.appendChild(chefHunan);
+    chefList.appendChild(chefShrimp);
+    chefList.appendChild(chefDragon);
+    chefSection.appendChild(chefList);
+    food.appendChild(chefSection);
+    foodMenu.appendChild(food);
+    foodMenu.appendChild(bottomImages);
+    content.appendChild(foodMenu);
 }
 
 export {menu};
